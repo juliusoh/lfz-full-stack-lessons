@@ -48,4 +48,4 @@ When your solution is complete, return to the root of your `lfz-full-stack-lesso
 ### Quiz
 
 - How do you add `express` to your package dependencies?
-- What Express application method binds the application to a network `PORT`?
+- What Express application method binds the server to a network `PORT`?
