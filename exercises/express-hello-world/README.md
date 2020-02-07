@@ -27,7 +27,7 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
     - `req` (short for "request")
     - `res` (short for "response")
 1. Read about [the `method` property](https://expressjs.com/en/4x/api.html#req.method) of the Express `req` object.
-1. Within your callback function, log the `method` property of the `req` object.
+1. Within your callback function, log the `method` property of the `req` object. Just be prepared to delete your `console.log()` before committing.
 1. Read about [the `send()` method](https://expressjs.com/en/4x/api.html#res.send) of the Express `res` object.
 1. Within your callback function, call the `send()` method of the `res` object and pass it a string.
 1. At the bottom of `index.js`, call [the `listen()` method](https://expressjs.com/en/4x/api.html#app.listen) of your `app` object and pass it the port number `3000` as well as a callback that prints a confirmation that the server is listening.
