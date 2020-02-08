@@ -14,7 +14,8 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 1. Add a route to your `app` that responds to `GET` requests at `'/api/grades'` by sending back JSON with [`res.json()`](https://expressjs.com/en/4x/api.html#res.json).
 1. Test your server by sending a `GET` request to `localhost:3000/api/grades`.
 1. Read about Express's built-in [JSON parsing middleware](https://expressjs.com/en/4x/api.html#express.json) in the Express.js docs.
-1. Enhance your `app` by registering the JSON middleware with `app.use()`.
+1. Create an instance of the JSON parsing middleware by calling the `json()` method of the `express` object.
+1. Enhance your `app` by passing the JSON middleware to `app.use()`. Now your `app` knows how to parse JSON request bodies.
 1. Read about [sending JSON](https://httpie.org/doc#json) with the HTTPie command line client.
 1. Read about the [`status()` method](https://expressjs.com/en/4x/api.html#res.status) of the Express `res` object.
 1. Test your server by sending a `POST` request to `localhost:3000` that includes a JSON body for a new grade:
