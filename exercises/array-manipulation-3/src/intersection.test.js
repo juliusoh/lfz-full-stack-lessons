@@ -8,7 +8,7 @@ describe('intersection(first, second)', function () {
 
   context('[2, 1] and [2, 3]', function () {
 
-    it('returns [1, 3]', function () {
+    it('returns [2]', function () {
       var output = intersection([2, 1], [2, 3]);
       expect(output).to.deep.equal([2]);
     });
@@ -17,7 +17,7 @@ describe('intersection(first, second)', function () {
 
   context('["html", "css", "javascript"] and ["php", "css", "sql"]', function () {
 
-    it('returns ["html", "javascript", "php", "sql"]', function () {
+    it('returns ["css"]', function () {
       var output = intersection(
         ['html', 'css', 'javascript'],
         ['php', 'css', 'sql']
@@ -29,7 +29,7 @@ describe('intersection(first, second)', function () {
 
   context('["a", "link", "to", "the", "past"] and ["the", "adventure", "of", "link"]', function () {
 
-    it('returns ["a", "to", "past", "adventure", "of"]', function () {
+    it('returns ["link", "the"]', function () {
       var output = intersection(
         ['a', 'link', 'to', 'the', 'past'],
         ['the', 'adventure', 'of', 'link']
