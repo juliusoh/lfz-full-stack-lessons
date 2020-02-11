@@ -29,12 +29,15 @@ delete from "products";
 
 Are you awake? 😈
 
-You must be _extremely_ careful when deleting things from a table as it cannot be undone. Let's try that again. We only want to delete the ShakeWeight because, well, it's ridiculous. We can target specific rows to delete by including a `where` clause.
+You must be _extremely_ careful when deleting things from a table as it cannot be undone. Let's try that again. We only want to delete the ShakeWeight because, well, it's ridiculous. We can target specific rows to delete by including a `where` clause. As with `insert` and `update` statements, we can include a `returning` clause if we want the affected row(s) returned to us. A `returning` clause is not mandatory though.
 
 ```sql
 delete from "products"
- where "productId" = 24;
+ where "productId" = 24
+returning *;
 ```
+
+Here's what's left:
 
 | productId | name        | description                | price | category |
 |-----------|-------------|----------------------------|-------|----------|
@@ -50,7 +53,7 @@ Let's "reset" the example table...
 | productId | name        | description                | price | category |
 |-----------|-------------|----------------------------|-------|----------|
 | 85        | ShamWow     | Soaks up so much liquid!   | 20    | cleaning |
-| 24        | ShakeWeight | Makes you really strong!   | 100   | fitness  |
+| 24        | ShakeWeight | Makes you really strong!   | 30    | fitness  |
 | 91        | OxyClean    | A versatile stain remover! | 10    | cleaning |
 
 If we wanted to `delete` all `"products"` in the `'cleaning'` category that are cheaper than `20`, we would:
@@ -60,6 +63,11 @@ delete from "products"
  where "category" = 'cleaning'
    and "price"    < 20
 ```
+
+| productId | name        | description                | price | category |
+|-----------|-------------|----------------------------|-------|----------|
+| 85        | ShamWow     | Soaks up so much liquid!   | 20    | cleaning |
+| 24        | ShakeWeight | Makes you really strong!   | 30    | fitness  |
 
 You can use `and` just about anywhere that logically makes sense in SQL. If you want multiple things to be true to meet your criteria, simply list them out using `and`.
 
