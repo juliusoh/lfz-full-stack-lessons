@@ -8,7 +8,7 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 
 ### Exercise
 
-For this exercise you will be implementing several generic array manipulation functions. You are given a description of each function, a suite of unit tests for each function, and an empty JavaScript file in which to write your implementation.
+For this exercise you will be implementing several generic object manipulation functions. You are given a description of each function, a suite of unit tests for each function, and an empty JavaScript file in which to write your implementation.
 
 Your goal is to define each function according to its description, such that all of its tests pass.
 
@@ -39,7 +39,7 @@ Open `src/get-value.js` and `src/get-value.test.js` in your code editor and skim
 
       ```js
       var dave = { firstName: 'David', lastName: 'Thomas' }
-      getValue(dave, 'firstName'); // -> "Dave"
+      getValue(dave, 'firstName'); // -> "David"
       getValue(dave, 'lastName'); // -> "Thomas"
 
       var learningFuze = { latitude: 33.6349, longitude: 117.7405 }
@@ -156,7 +156,7 @@ Open `src/get-value.js` and `src/get-value.test.js` in your code editor and skim
     #### Examples
 
     ```js
-    toObject(['firstName', 'David']);      // -> { firstName: "David" }
+    toObject(['firstName', 'David']);       // -> { firstName: "David" }
     toObject(['isCool', true]);             // -> { isCool: true }
     toObject(['employer', 'LearningFuze']); // -> { employer: "LearningFuze" }
     ```
