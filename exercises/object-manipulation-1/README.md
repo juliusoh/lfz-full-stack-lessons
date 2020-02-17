@@ -121,7 +121,7 @@ Open `src/get-value.js` and `src/get-value.test.js` in your code editor and skim
 
     #### Return Value
 
-      An `Array` of the `object`'s property keys.
+      An `Array` of the `object`'s property values.
 
     #### Examples
 
