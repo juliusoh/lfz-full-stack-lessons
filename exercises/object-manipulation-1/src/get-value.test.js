@@ -9,7 +9,7 @@ describe('getValue(object, key)', function () {
   it('returns the value of Dave\'s "firstName" property', function () {
     var dave = {
       firstName: 'David',
-      lastName: 'Pashcal'
+      lastName: 'Thomas'
     };
     var output = getValue(dave, 'firstName');
     expect(output).to.equal('David');
