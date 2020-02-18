@@ -42,4 +42,4 @@ When your solution is complete, return to the root of your `lfz-full-stack-lesso
 ### Quiz
 
 - What is the JavaScript Event Loop?
-- What is different between non-blocking blocking with respect to how code is executed?
+- What is different between "blocking" and  "non-blocking" with respect to how code is executed?
