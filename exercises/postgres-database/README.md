@@ -10,7 +10,7 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 
 Relational databases store data in **relations**, commonly referred to as **tables**. A table is a list of **rows** each having the same set of **attributes**. For example, all students in a `"students"` table could have `"firstName"`, `"lastName"`, and `"dateOfBirth"` attributes. Attributes are commonly referred to as **columns**. You might visualize a database table as a sort of spreadsheet where each row is a record in that spreadsheet. At the end of this exercises you'll get to see a visual representation of data in database tables. Come back and re-read this once you get to the end!
 
-A collection of **tables** is called a **schema**. A **schema** defines how the data in a relational database should be organized. In relational databases, you typically have to define your schema up front and the database server will make sure that any data coming in conforms to that schema.
+A collection of **tables** is called a **schema**. A **schema** defines how the data in a relational database should be organized. In relational databases, you typically have to define your schema up front and the database server will make sure that any data being written to the database conforms to that schema.
 
 ### Exercise
 
