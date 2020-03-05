@@ -1,6 +1,6 @@
 # postgres-intro
 
-This lesson introduces the [PostgreSQL](https://www.postgresql.org/) (pronounced "Post Gress Queue El). PostgreSQL v10 comes pre-installed in the LearningFuze development environment and this lesson assumes that you are running the latest version of the development environment.
+This lesson introduces the [PostgreSQL](https://www.postgresql.org/) (pronounced "Post Gress Queue El) relational database system. PostgreSQL v10 comes pre-installed in the LearningFuze development environment and this lesson assumes that you are running the latest version of the development environment.
 
 ### Before You Begin
 
