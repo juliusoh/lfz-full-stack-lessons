@@ -37,6 +37,7 @@ When using the `pg` package, you'll need to create a database connection object 
 ```js
 const pg = require('pg');
 
+// only create ONE pool for your whole server
 const db = new pg.Pool({
   connectionString: 'postgres://dev:lfz@localhost/studentGradeTable'
 });
@@ -85,8 +86,6 @@ app.get('/api/grades/:gradeId', (req, res, next) => {
         error: 'An unexpected error occurred.'
       });
     });
-  // review the documentation on Express.js error handling here:
-  // https://expressjs.com/en/guide/error-handling.html
 })
 ```
 
@@ -94,22 +93,35 @@ You will be implementing the following endpoints:
 
 - `GET /api/grades` returns all grades from the `"grades"` table.
 
-    The result could be a `200` or a `500` depending on the success of the query.
+    The result could be a `200` or a `500`.
+    - `200` The query may succeed
+    - `500` The query may fail
 
 - `POST /api/grades` inserts a new grade into the `"grades"` table.
-    The result could be a `201`, `400`, or `500`. The grade may be successfully inserted, the client may supply an invalid `grade`, or the query may fail.
+    The result could be a `201`, `400`, or `500`.
+    - `201` The grade may be successfully inserted,
+    - `400` the client may supply an invalid `grade`,
+    - `500` or the query may fail.
 
-- `PUT /api/grades/:gradeId` updates a grade in the `"grades"` table.
+- `PUT /api/grades/:gradeId` updates a grade in the `"grades"` table and returns the updated grade.
 
-    The result could be a `200`, `400`, `404`, or `500`. The grade may be successfully updated, the client may supply an invalid `grade` or `gradeId`, the target `grade` may not exist in the database, or there may be an error querying the database.
+    The result could be a `200`, `400`, `404`, or `500`.
+    - `200` The grade may be successfully updated,
+    - `400` the client may supply an invalid `grade` or `gradeId`,
+    - `404` the target `grade` may not exist in the database,
+    - `500` or there may be an error querying the database.
 
 - `DELETE /api/grades/:gradeId` deletes a grade from the `"grades"` table.
 
-    The result could be a `204`, `400`, `404`, or `500`. The grade may be successfully deleted, the client may supply an invalid `gradeId`, the target `grade` may not exist in the database, or there may be an error querying the database.
+    The result could be a `204`, `400`, `404`, or `500`.
+    - `204` The grade may be successfully deleted,
+    - `400` the client may supply an invalid `gradeId`,
+    - `404` the target `grade` may not exist in the database,
+    - `500` or there may be an error querying the database.
 
 ### Tips
 
-- Use [parameterized queries where necessary](https://node-postgres.com/features/queries#Parameterized%20query) to avoid [SQL Injection attacks!](https://www.youtube.com/watch?v=ciNHn38EyRc)
+- Use [parameterized queries where necessary](https://node-postgres.com/features/queries#Parameterized%20query) to avoid [SQL Injection attacks!](https://www.youtube.com/watch?v=_jKylhJtPmI)
 - Use ES6 template strings for your SQL so that you can indent them for readability.
 - Don't forget to add the `express.json()` middleware to parse JSON request bodies.
 - If the client successfully creates or updates a `grade`, then return them the _entire_ `grade` including any auto-generated values.

@@ -5,5 +5,6 @@ create table "grades" (
   "name"      text    not null,
   "course"    text    not null,
   "grade"     integer not null,
-  "createdAt" timestamptz(6) not null default now()
+  "createdAt" timestamptz(6) not null default now(),
+  primary key ("gradeId")
 );
