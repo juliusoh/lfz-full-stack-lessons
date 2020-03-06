@@ -91,19 +91,19 @@ app.get('/api/grades/:gradeId', (req, res, next) => {
 
 You will be implementing the following endpoints:
 
-- `GET /api/grades` returns all grades from the `"grades"` table.
+- `GET /api/grades` returns all grades from the `"grades"` table. The client should receive an array of objects.
 
     The result could be a `200` or a `500`.
     - `200` The query may succeed
     - `500` The query may fail
 
-- `POST /api/grades` inserts a new grade into the `"grades"` table.
+- `POST /api/grades` inserts a new grade into the `"grades"` table and returns the created grade. The client should receive an object, not an array.
     The result could be a `201`, `400`, or `500`.
     - `201` The grade may be successfully inserted,
     - `400` the client may supply an invalid `grade`,
     - `500` or the query may fail.
 
-- `PUT /api/grades/:gradeId` updates a grade in the `"grades"` table and returns the updated grade.
+- `PUT /api/grades/:gradeId` updates a grade in the `"grades"` table and returns the updated grade. The client should receive an object, not an array.
 
     The result could be a `200`, `400`, `404`, or `500`.
     - `200` The grade may be successfully updated,
