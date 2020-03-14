@@ -23,7 +23,7 @@ In this exercise you'll be building a basic command-line calculator application 
     - in `multiply.js` define a function with two parameters that returns their product.
     - in `divide.js` define a function with two parameters that returns their quotient.
 1. Within each file, assign the function you defined to the `exports` property of the local `module` object.
-1. Within `calculate.js`, call the local `require()` function to import each of the functions defined within `add.js`, `subtract.js`, `multiply.js`, and `divide.js`. For example, to import the `add` function you'l do this:
+1. Within `calculate.js`, call the local `require()` function to import each of the functions defined within `add.js`, `subtract.js`, `multiply.js`, and `divide.js`. For example, to import the `add` function you'll do this:
     ```js
     const add = require('./add');
     ```
