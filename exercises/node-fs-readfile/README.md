@@ -40,6 +40,7 @@ A [file system](https://en.wikipedia.org/wiki/File_system) is a way of organizin
   <img src="images/cat.gif">
 </p>
 
+**Extra Challenge**: Dump 30 paragraphs of [lorem ipsum](https://www.lipsum.com/) into a file and see if it concatenates with your other files in the right order.
 
 ### Submitting Your Solution
 
