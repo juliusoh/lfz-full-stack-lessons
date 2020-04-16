@@ -22,7 +22,6 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
     ```bash
     node index.js
     ```
-1. After you've submitted your solution, watch [Phil Roberts's presentation](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=1s) on async and the JavaScript event loop.
 
 ![Promises Solution](promises-solution.gif)
 
