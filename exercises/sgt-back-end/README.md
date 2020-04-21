@@ -50,7 +50,7 @@ const db = new pg.Pool({
 
 The above example should work fine, but here are links to the full documentation for [connecting to Postgres](https://node-postgres.com/features/connecting) and [connection pool objects](https://node-postgres.com/api/pool).
 
-You only need to create this object once at the top of your file. You can then use it in each of your Express.js endpoints. The most important part of the documentation is probably [how to send SQL queries to the database with the `query()` method](https://node-postgres.com/features/queries).
+You only need to create this object once at the top of your file. You can then use it in each of your [Express.js routes](https://expressjs.com/en/starter/basic-routing.html). The most important part of the documentation is probably [how to send SQL queries to the database with the `query()` method](https://node-postgres.com/features/queries).
 
 Once you've created a `pg.Pool`, you can [use its `query()` method](https://node-postgres.com/api/pool#pool.query) to send SQL to PostgreSQL and receive results.
 
