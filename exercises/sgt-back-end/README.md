@@ -6,6 +6,11 @@ Building a simple JSON API.
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/sgt-back-end` directory in your terminal.
 
+### Tips!
+
+- Bookmark all of the links in this lesson and be prepared to refer back to them!
+- You can force database failures by sending malformed SQL queries to the database.
+
 ### Challenge
 
 For this challenge you will be creating a small back end API using Node.js and PostgreSQL. Each endpoint that you make should be thoroughly tested with the HTTPie command line client.
@@ -49,7 +54,7 @@ You only need to create this object once at the top of your file. You can then u
 
 Once you've created a `pg.Pool`, you can [use its `query()` method](https://node-postgres.com/api/pool#pool.query) to send SQL to PostgreSQL and receive results.
 
-Here is an example endpoint for `GET`ing a `grade` by its `gradeId`.
+Here is an example route for `GET`ing a `grade` by its `gradeId`. Read through the code very slowly. You will be following this pattern fairly closely for many of your own routes.
 
 ```js
 app.get('/api/grades/:gradeId', (req, res, next) => {
@@ -67,9 +72,14 @@ app.get('/api/grades/:gradeId', (req, res, next) => {
   const params = [gradeId];
   // review the documentation on parameterized queries here:
   // https://node-postgres.com/features/queries#Parameterized%20query
+  // you'll be using this information to prevent SQL injection attacks
+  // https://www.youtube.com/watch?v=_jKylhJtPmI
   db.query(sql, params)
     .then(result => {
       // the query succeeded, even if nothing was found
+      // the result object will include an array of rows
+      // see the docs on results
+      // https://node-postgres.com/api/result
       const grade = result.rows[0];
       if (!grade) {
         res.status(404).json({
@@ -89,34 +99,35 @@ app.get('/api/grades/:gradeId', (req, res, next) => {
 })
 ```
 
-You will be implementing the following endpoints:
+You will be implementing the following endpoints. Be sure to use appropriate [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html). **You should include useful error messages in failure scenarios**. The error message should clearly communicate what went wrong. Imagine that you are trying to help the client do the right thing. See the example above.
+
 
 - `GET /api/grades` returns all grades from the `"grades"` table. The client should receive an array of objects.
 
     The result could be a `200` or a `500`.
-    - `200` The query may succeed
-    - `500` The query may fail
+    - `200` because the query may succeed
+    - `500` because the query may fail
 
 - `POST /api/grades` inserts a new grade into the `"grades"` table and returns the created grade. The client should receive an object, not an array.
     The result could be a `201`, `400`, or `500`.
-    - `201` The grade may be successfully inserted,
-    - `400` the client may supply an invalid `grade`,
+    - `201` because the grade may be successfully inserted,
+    - `400` because the client may supply an invalid `grade`,
     - `500` or the query may fail.
 
 - `PUT /api/grades/:gradeId` updates a grade in the `"grades"` table and returns the updated grade. The client should receive an object, not an array.
 
     The result could be a `200`, `400`, `404`, or `500`.
-    - `200` The grade may be successfully updated,
-    - `400` the client may supply an invalid `grade` or `gradeId`,
-    - `404` the target `grade` may not exist in the database,
+    - `200` because the grade may be successfully updated,
+    - `400` because the client may supply an invalid `grade` or `gradeId`,
+    - `404` because the target `grade` may not exist in the database,
     - `500` or there may be an error querying the database.
 
 - `DELETE /api/grades/:gradeId` deletes a grade from the `"grades"` table.
 
     The result could be a `204`, `400`, `404`, or `500`.
-    - `204` The grade may be successfully deleted,
-    - `400` the client may supply an invalid `gradeId`,
-    - `404` the target `grade` may not exist in the database,
+    - `204` because the grade may be successfully deleted,
+    - `400` because the client may supply an invalid `gradeId`,
+    - `404` because the target `grade` may not exist in the database,
     - `500` or there may be an error querying the database.
 
 ### Tips
