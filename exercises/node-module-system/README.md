@@ -2,6 +2,14 @@
 
 This lesson introduces the basics of how Node.js supports [modular programming](https://en.wikipedia.org/wiki/Modular_programming).
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is a JavaScript module?
+- What values are passed into a Node.js module's local scope?
+- Give two examples of _truly_ global variables in a Node.js program.
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/node-module-system` directory in your terminal.
@@ -18,6 +26,7 @@ Let's explore some of the things that the Node.js module system includes.
 
 1. Read the [introductory section of Modules](https://nodejs.org/docs/latest-v10.x/api/modules.html#modules_modules) in the official Node.js documentation.
 1. Read about [the module wrapper](https://nodejs.org/docs/latest-v10.x/api/modules.html#modules_the_module_wrapper) in the official Node.js documentation.
+1. Read about [the module scope](https://nodejs.org/docs/latest-v10.x/api/modules.html#modules_the_module_scope) in the official Node.js documentation.
 1. Within any Node.js module, `exports`, `require`, `module`, `__filename`, and `__dirname` all _appear_ to be "global" variables. They're defined and present. Within `a-wrapped-module.js`, use `console.log` (with labels!) to:
     - print the [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) `exports` to the terminal
     - print the value of `exports` to the terminal
@@ -29,16 +38,9 @@ Let's explore some of the things that the Node.js module system includes.
     - print the value of `__filename` to the terminal
     - print the [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) `__dirname` to the terminal
     - print the value of `__dirname` to the terminal
-1. Execute `a-wrapped-module.js` with the `node` command.
-1. Read about [the module scope](https://nodejs.org/docs/latest-v10.x/api/modules.html#modules_the_module_scope) in the official Node.js documentation.
+1. Execute `a-wrapped-module.js` with the `node` command and verify that each value's type is what you expect, having read the documentation.
 1. To get a sense of what is _truly_ global in Node.js programs, compare [the module scope](https://nodejs.org/docs/latest-v10.x/api/modules.html#modules_the_module_scope) to [Node.js globals](https://nodejs.org/docs/latest-v10.x/api/globals.html).
 
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is a JavaScript module?
-- What values are passed into a Node.js module's local scope?
-- Give two examples of _truly_ global variables in a Node.js program.

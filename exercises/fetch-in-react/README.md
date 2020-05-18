@@ -2,6 +2,14 @@
 
 Sending HTTP requests to a server from a React app.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- When does React call a component's `componentDidMount` method?
+- Name three React.Component lifecycle methods.
+- How do you pass data to a child component?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/fetch-in-react` directory in your terminal.
@@ -24,9 +32,3 @@ Add an `error` state to your `App` that displays an error message if the request
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- When does React call a component's `componentDidMount` method?
-- Name three React.Component lifecycle methods.
-- How do you pass data to a child component?

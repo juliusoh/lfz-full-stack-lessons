@@ -1,6 +1,13 @@
 # node-require
 
-This lesson expands on `node-module-system` to explore using the `module` object and `require` function to build a small Node.js program made of multiple "modules".
+This lesson expands on [`node-module-system`](../node-module-system) to explore using the `module` object and `require` function to build a small Node.js program made up of multiple "modules".
+
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is the purpose of `module.exports` in a Node.js module?
+- How do you import functionality into a Node.js module from another Node.js module?
 
 ### Before You Begin
 
@@ -38,8 +45,3 @@ In this exercise you'll be building a basic command-line calculator application 
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is the purpose of `module.exports` in a Node.js module?
-- How do you import functionality into a Node.js module from another Node.js module?

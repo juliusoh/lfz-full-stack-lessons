@@ -10,7 +10,13 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 
 Remember, `String`s [are Array-like](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Character_access) and have a lot of [useful methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_2).
 
-To begin, download the dependencies listed in `package.json` with the `npm install` command. Then examine the `"scripts"` included in `package.json`. `"test"` runs the [`mocha`](https://mochajs.org/) testing framework once; `"tdd"` runs `mocha` in `--watch` mode to automatically re-run tests when file changes are detected.
+For this exercise you will be implementing several generic string manipulation functions. You are given a description of each function, a suite of unit tests for each function, and an empty JavaScript file in which to write your implementation.
+
+Your goal is to define each function according to its description, such that all of its tests pass.
+
+Begin by skimming through `index.html` in your code editor, then opening it in your web browser. You should see **`ReferenceError: ... is not defined`** a few times on the page.
+
+Then, following the specifications below, complete each of the functions defined in the provided `.js` files. **Each function should be defined in its own file.**
 
 1. ### `truncate(length, string)`
 

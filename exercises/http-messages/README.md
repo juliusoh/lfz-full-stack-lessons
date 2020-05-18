@@ -2,6 +2,14 @@
 
 This lesson covers the fundamentals of how client and server applications communicate with one another on the Web. It is foundational to Web development, although foreign to many new developers.
 
+### Quiz
+
+- What is a client?
+- What is a server?
+- Which HTTP method does a browser issue to a web server when you visit a URL?
+- What is the format of an HTTP request message?
+- What is the format of an HTTP response message?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/http-messages` directory in your terminal.
@@ -25,10 +33,3 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is a client?
-- What is a server?
-- Which HTTP method does a browser issue to a web server when you visit a URL?
-- What are the formats of HTTP Requests and Responses?

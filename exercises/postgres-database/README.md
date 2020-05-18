@@ -2,6 +2,14 @@
 
 This lesson covers the creation of a database in a PostgreSQL database server. You'll be importing a premade database via the command line and inspecting the results.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is a database schema?
+- What is a table?
+- What is a row?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/postgres-database` directory in your terminal.
@@ -25,32 +33,23 @@ A collection of **tables** is called a **schema**. A **schema** defines how the 
     ```bash
     psql -c '\l' > list-of-databases.txt
     ```
-1. Open a **second terminal** into your development environment and **stay in the home directory**. We're about to download a sample database to import into `postgres` and we don't want to check it into Git.
-1. In the second terminal:
-    - Clone [the `pagila` sample database](https://github.com/Learning-Fuze/pagila) from LearningFuze on GitHub and then change directories into `pagila`.
-    - Execute the following command to import the `pagila` schema into PostgreSQL. This will set up a bunch of things in your `pagila` database, including all of the tables required. You'll see a lot of output, but none of it should be errors.
-        ```bash
-        psql -d pagila -f schema.sql
-        ```
-    - Execute the following command to import all of the sample data into your `pagila` database. You'll see a lot of output, but none of it should be errors.
-        ```bash
-        psql -d pagila -f data.sql
-        ```
-    - Close the second terminal by typing `exit` and pressing enter.
-1. In your first terminal, execute the following command to list all of the new tables in your `pagila` database and write the output to a file:
+1. Briefly skim through the supplied `data.sql` and `schema.sql` files included in this exercise. That's a lot of SQL!
+1. Execute the following command to import the schema into PostgreSQL. This will set up a bunch of things in your `pagila` database, including all of the tables required. You'll see a lot of output in your terminal, but none of it should be errors.
+    ```bash
+    psql -d pagila -f schema.sql
+    ```
+1. Execute the following command to import all of the sample data into your `pagila` database. You'll see a lot of output, but none of it should be errors.
+    ```bash
+    psql -d pagila -f data.sql
+    ```
+1. Execute the following command to list all of the new tables in your `pagila` database and write the output to a file:
     ```bash
     psql -d pagila -c '\dt' > list-of-relations.txt
     ```
-1. Start the `pgweb` application by typing `pgweb` and pressing enter.
-1. Visit `http://localhost:8081` in your browser and click on the upper left corner where it says `dev`. Change to `pagila`.
+1. Start the `pgweb` application included in your development environment by typing `pgweb` and pressing enter.
+1. While `pgweb` is running, visit `http://localhost:8081` in your browser and click on the upper left corner where it says `dev`. Change it to `pagila`.
 1. You should see 15 tables listed. Click on each of them to see their data.
 
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is a database schema?
-- What is a table?
-- What is a row?

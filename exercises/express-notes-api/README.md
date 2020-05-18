@@ -180,7 +180,7 @@ If a client sends a `POST` request to `/api/notes`, then there are three possibl
 
 1. If the client does not include a `content` property in the request body, then they should receive a `400` response containing a JSON object with an `error` property detailing the problem.
 1. If the client includes a `content` property in the request body and the note is successfully recorded, then they should receive a `201` response including the created note (with `id`) as a JSON object in the response body.
-1. If the client includes a `content` property in the request body and the note is _not_ successfully recorded (_i.e_ an error occured while writing to `data.json`), then they should receive a `500` response containing a JSON object. The JSON object should have an `error` property that states a generic error message: `{ "error": "An unexpected error occurred." }`
+1. If the client includes a `content` property in the request body and the note is _not_ successfully recorded (_i.e_ an error occured while writing to `data.json`), then they should receive a `500` response containing a JSON object. The JSON object should have an `error` property that states a generic error message: `{ "error": "An unexpected error occurred." }`. You can "test" this error handling by trying to write the data to a file in a directory that doesn't exist _e.g._ `derp/data.json`.
 
 #### Example Request (Bad Request)
 

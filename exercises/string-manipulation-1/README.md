@@ -10,47 +10,21 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 
 Remember, `String`s [are Array-like](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Character_access) and have a lot of [useful methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_2).
 
-To begin, download the dependencies listed in `package.json` with the `npm install` command. Then examine the `"scripts"` included in `package.json`. `"test"` runs the [`mocha`](https://mochajs.org/) testing framework once; `"tdd"` runs `mocha` in `--watch` mode to automatically re-run tests when file changes are detected.
+For this exercise you will be implementing several generic string manipulation functions. You are given a description of each function, a suite of unit tests for each function, and an empty JavaScript file in which to write your implementation.
 
-```bash
-npm test
+Your goal is to define each function according to its description, such that all of its tests pass.
 
-> mocha --reporter nyan
+Begin by skimming through `index.html` in your code editor, then opening it in your web browser. You should see **`ReferenceError: ... is not defined`** a few times on the page.
 
- 0   -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_,------,
- 0   -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_|   /\_/\
- 43  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-^|__( o .o)
-     -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-  ""  ""
+<p align="middle">
+  <img src="images/failing-tests.png" alt="failing-tests">
+</p>
 
-  0 passing (17ms)
-  43 pending
-```
+Open `src/get-first-char.js` and `src/get-first-char.test.js` in your code editor and skim the code in `get-first-char.test.js`. As you add to or modify `head.js`, reload `index.html` in your browser to receive feedback. Work through defining each function specified below until all unit tests pass.
 
-Go to `test/get-first-char.test.js` in your code editor and change `describe.skip(` to simply `describe(`. Then run the `"test"` script again.
+**Each function should be defined in its own file.**
 
-```js
-// before
-describe.skip('getFirstChar(string)', function () {
-// after
-describe('getFirstChar(string)', function () {
-```
-
-```bash
-npm test
-
-> mocha --reporter nyan
-
- 0   -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_,------,
- 5   -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_|   /\_/\
- 38  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-^|__( x .x)
-     -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-  ""  ""
-
-  0 passing (24ms)
-  38 pending
-  5 failing
-```
-
-Then, following the specifications below, complete each of the functions defined in the provided `.js` files. Before moving to the next function, remove the `.skip` from its corresponding test file in the `test` directory. Use the `"tdd"` script to automatically re-run tests when you save your files. `npm run tdd`
+Then, following the specifications below, complete each of the functions defined in the provided `.js` files.
 
 1. ### `getFirstChar(string)`
 

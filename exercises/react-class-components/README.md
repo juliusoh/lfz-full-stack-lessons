@@ -2,6 +2,13 @@
 
 Creating reusable components by extending `React.Component`.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- How do you create "class" component in React?
+- How do you access props in a class component?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/react-class-components` directory in your terminal.
@@ -69,8 +76,3 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- How do you create "class" component in React?
-- How do you access props in a class component?

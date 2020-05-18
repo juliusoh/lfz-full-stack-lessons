@@ -2,6 +2,15 @@
 
 This exercise covers some basic command-line literacy for [UNIX-like operating systems](https://en.wikipedia.org/wiki/Unix-like). It primarily focuses on manipulation of files and directories.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What are the three great virtues of a programmer?
+- Name at least one use case for each of the commands listed in this exercise.
+- What is a GUI?
+- What is a CLI?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/command-line-basics` directory in your terminal.
@@ -141,10 +150,3 @@ Use the up and down arrows (or PgUp and PgDn) to scroll the page. Press `space` 
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What are the three great virtues of a programmer?
-- Name at least one use case for each of the commands listed in this exercise.
-- What is a GUI?
-- What is a CLI?

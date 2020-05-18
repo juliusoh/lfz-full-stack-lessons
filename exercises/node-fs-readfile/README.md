@@ -2,6 +2,15 @@
 
 This lesson introduces the `fs` module built into Node.js, allowing JavaScript programs to access and manipulate the operating system's files.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is a directory?
+- What is a relative file path?
+- What is an absolute file path?
+- What module does Node.js include for manipulating the file system?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/node-fs-readfile` directory in your terminal.
@@ -12,7 +21,7 @@ A [file system](https://en.wikipedia.org/wiki/File_system) is a way of organizin
 
 ### Exercise
 
-#### Level 1
+#### Level 1 (Required)
 
 1. Read the introductory section of the [`File System` module](https://nodejs.org/docs/latest-v10.x/api/fs.html#fs_file_system) in the official Node.js documentation.
 1. Read about the [`readFile` method](https://nodejs.org/docs/latest-v10.x/api/fs.html#fs_fs_readfile_path_options_callback) of the `fs` module in the official Node.js documentation.
@@ -23,7 +32,7 @@ A [file system](https://en.wikipedia.org/wiki/File_system) is a way of organizin
   <img src="images/read-dijkstra.gif">
 </p>
 
-#### Level 2
+#### Level 2 (Required)
 
 1. Create a new file named `read-any.js`.
 1. Within `read-any.js` use `fs.readFile` and `process.argv` to print the contenst of any specified file to the terminal.
@@ -32,23 +41,14 @@ A [file system](https://en.wikipedia.org/wiki/File_system) is a way of organizin
   <img src="images/read-any.gif">
 </p>
 
-#### ADVANCED - ONLY DO AFTER LEVELS 1 AND 2 ARE TURNED IN - NOT REQUIRED
+#### Level 3 (Optional) - ONLY DO AFTER LEVELS 1 AND 2 ARE TURNED IN
 
-1. Create a new file named `cat.js` that can take any number of files via `process.arv`, concatenate their contents, and print the result to the terminal (just like the `cat` command). **Guarantee that the order of the combined contents match the order of the file names passed to the program.**
+1. Create a new file named `cat.js` that can take any number of files via `process.arv`, concatenate their contents, and print the result to the terminal (just like the `cat` command). **Guarantee that the order of the combined contents match the order of the file names passed to the program.** A large `hipster-ipsum.txt` has been included for testing purposes.
 
 <p align="middle">
   <img src="images/cat.gif">
 </p>
 
-**Extra Challenge**: Dump 30 paragraphs of [lorem ipsum](https://www.lipsum.com/) into a file and see if it concatenates with your other files in the right order.
-
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is a directory?
-- What is an absolute file path?
-- What is a relative file path?
-- What module does Node.js include for manipulating the file system?

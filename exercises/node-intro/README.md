@@ -2,13 +2,23 @@
 
 This exercise introduces the Node.js JavaScript runtime. You'll be exploring a couple of ways to use the `node` command.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is Node.js?
+- What can Node.js be used for?
+- What is a REPL?
+- When was Node.js created?
+- What back end languages have you heard of?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/node-intro` directory in your terminal.
 
 ### Introduction
 
-Node.js is a program that allows JavaScript to be run outside of a web browser. It is commonly used to build back ends for Web applications, command-line programs, or any kind of automation that developers wish to perform. Node.js is powered by the same JavaScript engine as the Google Chrome browser. It is free, open-source software and its source code is available on GitHub.
+Node.js is a program that allows JavaScript to be run outside of a web browser. It is commonly used to build back ends for Web applications, command-line programs, or any kind of automation that developers wish to perform. Node.js is powered by V8; the same JavaScript engine in the Google Chrome browser. It is free, open-source software and its source code is [available on GitHub](https://github.com/nodejs/node).
 
 <p align="middle">
   <img src="images/node-github.png">
@@ -46,16 +56,8 @@ Node.js itself is written in a combination of JavaScript and C++. Python and Per
     var lastName = 'Dahl'
     firstName + ' ' + lastName
     ```
-1. Take a screen shot of your Node.js REPL antics to turn in with your Pull Request.
+1. Take a screen shot of your Node.js REPL exploration to turn in with your Pull Request.
 
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is Node.js?
-- What can Node.js be used for?
-- What is a REPL?
-- When was Node.js created?
-- What back end languages have you heard of?

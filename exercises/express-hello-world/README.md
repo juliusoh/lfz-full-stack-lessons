@@ -2,6 +2,13 @@
 
 This lesson covers programming an Express server to respond to client requests.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- How do you register a middleware with an Express application?
+- Which objects does an Express application pass to your middleware to manage the request/response lifecycle of the server?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/express-hello-world` directory in your terminal.
@@ -31,15 +38,15 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 1. Read about [the `send()` method](https://expressjs.com/en/4x/api.html#res.send) of the Express `res` object.
 1. Within your callback function, call the `send()` method of the `res` object and pass it a string.
 1. At the bottom of `index.js`, call [the `listen()` method](https://expressjs.com/en/4x/api.html#app.listen) of your `app` object and pass it the port number `3000` as well as a callback that prints a confirmation that the server is listening.
-1. Start your server by executing `index.js` with the `node` command.
-1. In a separate terminal session, use the `http` command to send a `GET` request to `localhost:3000` to confirm that your server is working as expected.
+1. Start your server by executing `index.js` with the `node` command and leave it running.
+1. In a **separate terminal session** of your development environment, use the `http` command to send a `GET` request to `localhost:3000` to confirm that your server is working as expected.
 1. Visit `http://localhost:3000` in your web browser. You should receive the same response.
 
 <p align="middle">
   <img src="images/express-hello-world.gif">
 </p>
 
-### Extra
+### Optional - Try after turning in the above.
 
 - Try sending HTTP requests with different methods (`GET`, `POST`, `DELETE`) to `localhost:3000` to see the different methods being logged to your server terminal.
 - Try sending an HTML string from your server and visiting `http://localhost:3000` in your browser.
@@ -47,8 +54,3 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- How do you register a middleware with an Express application?
-- Which objects does an Express application pass to your middleware to manage the request/response lifecycle of the server?

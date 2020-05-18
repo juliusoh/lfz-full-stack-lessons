@@ -2,6 +2,12 @@
 
 This lesson covers programming an Express server to handle `DELETE` requests.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is the significance of an HTTP request's method?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/express-delete` directory in your terminal.

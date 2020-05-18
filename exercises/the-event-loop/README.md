@@ -6,6 +6,13 @@ The Event Loop is one of the **four** major concepts that sets JavaScript apart 
   <img src="images/node-architecture.jpg">
 </p>
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is the JavaScript Event Loop?
+- What is different between "blocking" and "non-blocking" with respect to how code is executed?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/the-event-loop` directory in your terminal.
@@ -38,8 +45,3 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is the JavaScript Event Loop?
-- What is different between "blocking" and  "non-blocking" with respect to how code is executed?

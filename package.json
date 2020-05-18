@@ -36,21 +36,21 @@
   },
   "homepage": "https://github.com/Learning-Fuze/lfz-full-stack-lessons#readme",
   "devDependencies": {
-    "babel-eslint": "10.0.3",
-    "eslint": "6.7.2",
-    "eslint-config-standard": "14.1.0",
-    "eslint-plugin-cypress": "2.8.0",
-    "eslint-plugin-import": "2.19.1",
-    "eslint-plugin-node": "10.0.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.0.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-cypress": "2.10.3",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.17.0",
+    "eslint-plugin-react": "7.20.0",
     "eslint-plugin-standard": "4.0.1",
-    "husky": "3.1.0",
-    "lint-staged": "9.5.0",
-    "npm-check": "5.9.0",
-    "stylelint": "12.0.0",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.2",
+    "npm-check": "5.9.2",
+    "stylelint": "13.4.0",
     "stylelint-config-recommended": "3.0.0",
-    "stylelint-config-standard": "19.0.0"
+    "stylelint-config-standard": "20.0.0"
   },
   "stylelint": {
     "extends": [

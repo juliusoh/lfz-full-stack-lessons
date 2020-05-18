@@ -1,6 +1,12 @@
 # postgres-intro
 
-This lesson introduces the [PostgreSQL](https://www.postgresql.org/) (pronounced "Post Gress Queue El) relational database system. PostgreSQL v10 comes pre-installed in the LearningFuze development environment and this lesson assumes that you are running the latest version of the development environment.
+This lesson introduces the [PostgreSQL](https://www.postgresql.org/) (pronounced "Post Gress Queue El") relational database system. PostgreSQL v10 comes pre-installed in the LearningFuze development environment and this lesson assumes that you are running the latest version of the development environment.
+
+### Quiz
+
+- What is PostgreSQL and what are some alternative relational databases?
+- What are some advantages of learning a relational database?
+- What is one way to see if PostgreSQL is running?
 
 ### Before You Begin
 
@@ -55,9 +61,3 @@ Relational databases are arguably the most widely used kind of database. [SQLite
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is PostgreSQL and what are some alternative relational databases?
-- What are some advantages of learning a relational database?
-- What is one way to see if PostgreSQL is running?

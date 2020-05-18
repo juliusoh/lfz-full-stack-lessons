@@ -2,6 +2,15 @@
 
 Using Babel to transform JavaScript code.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is Babel?
+- What is a Plug-in?
+- What is a Webpack loader?
+- How can you make Babel and Webpack work together?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/babel-intro` directory in your terminal.
@@ -43,10 +52,3 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is Babel?
-- What is a Plug-in?
-- What is a Webpack loader?
-- How can you make Babel and Webpack work together?

@@ -1,6 +1,6 @@
 # sgt-back-end
 
-Building a simple JSON API.
+Building a simple JSON API, backed by a relational database.
 
 ### Before You Begin
 
@@ -9,7 +9,7 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 ### Tips!
 
 - Bookmark all of the links in this lesson and be prepared to refer back to them!
-- You can force database failures by sending malformed SQL queries to the database.
+- See the rest of the tips at the bottom of this exercise!!!
 
 ### Challenge
 
@@ -59,7 +59,8 @@ Here is an example route for `GET`ing a `grade` by its `gradeId`. Read through t
 ```js
 app.get('/api/grades/:gradeId', (req, res, next) => {
   const { gradeId } = req.params;
-  if (!parseInt(gradeId, 10)) {
+  const gradeId = parseInt(req.params.gradeId);
+  if (!Number.isInteger(gradeId) || gradeId <= 0) {
     return res.status(400).json({
       error: '"gradeId" must be a positive integer'
     });
@@ -101,7 +102,6 @@ app.get('/api/grades/:gradeId', (req, res, next) => {
 
 You will be implementing the following endpoints. Be sure to use appropriate [status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html). **You should include useful error messages in failure scenarios**. The error message should clearly communicate what went wrong. Imagine that you are trying to help the client do the right thing. See the example above.
 
-
 - `GET /api/grades` returns all grades from the `"grades"` table. The client should receive an array of objects.
 
     The result could be a `200` or a `500`.
@@ -130,8 +130,9 @@ You will be implementing the following endpoints. Be sure to use appropriate [st
     - `404` because the target `grade` may not exist in the database,
     - `500` or there may be an error querying the database.
 
-### Tips
+### Moar Tips!
 
+- You can force database failures by sending malformed SQL queries to the database.
 - Use [parameterized queries where necessary](https://node-postgres.com/features/queries#Parameterized%20query) to avoid [SQL Injection attacks!](https://www.youtube.com/watch?v=_jKylhJtPmI)
 - Use ES6 template strings for your SQL so that you can indent them for readability.
 - Don't forget to add the `express.json()` middleware to parse JSON request bodies.

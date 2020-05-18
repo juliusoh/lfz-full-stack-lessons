@@ -2,6 +2,12 @@
 
 This lesson covers one of the ways that an express server can send file contents in response to client requests.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is the `Content-Type` header of HTTP requests and responses used for?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/express-sendfile` directory in your terminal.
@@ -20,7 +26,7 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 1. Within your callback, use `res.sendFile()` to send one of your files (`index.html`, `styles.css`, or `main.js`) if the `req.originalUrl` is `/index.html`, `/styles.css`, or `/main.js` respectively. **If none of these are matched, call the `next()` function instead to trigger a 404 Not Found response**.
 1. Add [`app.listen()`](https://expressjs.com/en/4x/api.html#app.listen) to the bottom of `index.js` so that your server listens on port `3000`.
 1. Start your server by executing `index.js` with the `node` command.
-1. Test your server using the `http` command to send `GET` requests for `localhost:3000/index.html`, `localhost:3000/styles.css`, and `localhost:3000/main.js` one-by-one.
+1. Test your server using the `http` command to send `GET` requests for `localhost:3000/index.html`, `localhost:3000/styles.css`, and `localhost:3000/main.js` one-by-one. Note the [`Content-Type`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) header of each response.
 1. Test your server by visiting `http://localhost:3000/index.html` in your web browser and checking the "Network" tab of the developer tools.
 
 <p align="middle">
@@ -30,7 +36,3 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What is the `Content-Type` header of HTTP requests and responses used for?

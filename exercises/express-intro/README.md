@@ -2,6 +2,13 @@
 
 This lesson introduces the Express web framework for Node.js.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- How do you add `express` to your package dependencies?
+- What Express application method binds the server to a network `PORT`?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/express-intro` directory in your terminal.
@@ -36,7 +43,6 @@ Express.js is an extremely popular and widely deployed web server framework for 
     - **You should receive a 404 Not Found response from the server.**
 1. Visit `http://localhost:3000` in your web browser. You should receive the same response.
 
-
 <p align="middle">
   <img src="images/express-intro.gif">
 </p>
@@ -44,8 +50,3 @@ Express.js is an extremely popular and widely deployed web server framework for 
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- How do you add `express` to your package dependencies?
-- What Express application method binds the server to a network `PORT`?

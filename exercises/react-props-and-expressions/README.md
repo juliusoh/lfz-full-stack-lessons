@@ -2,6 +2,14 @@
 
 Passing dynamic values to React components.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What are props in React?
+- How do you pass props to a component?
+- How do you write JavaScript expressions in JSX?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/react-props-and-expressions` directory in your terminal.
@@ -9,9 +17,9 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 ### Exercise
 
 1. Read about [embedding expressions in JSX](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) in the official React documentation.
-2. Read about [Props in JSX](https://reactjs.org/docs/jsx-in-depth.html#props-in-jsx) in the official React documentation.
-3. Read about [Components and Props](https://reactjs.org/docs/components-and-props.html) in the official React documentation.
-4. Create a new `package.json` and install the following:
+1. Read about [Props in JSX](https://reactjs.org/docs/jsx-in-depth.html#props-in-jsx) in the official React documentation.
+1. Read about [Components and Props](https://reactjs.org/docs/components-and-props.html) in the official React documentation.
+1. Create a new `package.json` and install the following:
     - `dependencies`
       - `react`
       - `react-dom`
@@ -21,7 +29,7 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
       - `babel-loader`
       - `@babel/core`
       - `@babel/plugin-transform-react-jsx`
-5. Create a `webpack.config.js` and add the following JavaScript to it.
+1. Create a `webpack.config.js` and add the following JavaScript to it.
     ```js
     module.exports = {
       resolve: {
@@ -44,14 +52,14 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
       }
     };
     ```
-6. Add a `"build"` script to your `package.json` that runs `webpack`.
-7. Create two directories - `src` and `dist`.
-8. Add an `index.jsx` to `src` and an `index.html` to `dist`.
-9. Within `dist/index.html`:
+1. Add a `"build"` script to your `package.json` that runs `webpack`.
+1. Create two directories - `src` and `dist`.
+1. Add an `index.jsx` to `src` and an `index.html` to `dist`.
+1. Within `dist/index.html`:
     - Create an HTML skeleton.
     - Add a `div` with the id `"root"`.
     - Add a `script` tag for `"main.js"`.
-10. Within `src/index.jsx`
+1. Within `src/index.jsx`
     - Import `React` from the `"react"` package.
     - Import `ReactDOM` from the `"react-dom"` package.
     - Define a function component named `CustomButton` that returns JSX for a `<button>` with `props.text` as its text content.
@@ -70,17 +78,11 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
         document.querySelector('#root')
       );
       ```
-11. Run your `"build"` script by doing `npm run build` in your terminal.
-12. Open `dist/index.html` in your browser to see your rendered buttons.
+1. Run your `"build"` script by doing `npm run build` in your terminal.
+1. Open `dist/index.html` in your browser to see your rendered buttons.
     ![Props and Expressions](react-props-and-expressions-solution.png)
-13. **Note:** Webpack does not automatically recompile your JSX code. You must re-run your `"build"` script to create a new `main.js` (or add an NPM script named `watch` that runs `webpack --watch`).
+1. **Note:** Webpack does not automatically recompile your JSX code. You must re-run your `"build"` script to create a new `main.js` (or add an NPM script named `watch` that runs `webpack --watch`).
 
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- What are props in React?
-- How do you pass props to a component?
-- How do you write JavaScript expressions in JSX?

@@ -2,6 +2,15 @@
 
 This lesson covers adding data to a SQL table using `insert` statements.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- How do you add a row to a SQL table?
+- What is a tuple?
+- How do you add multiple rows to a SQL table at once?
+- How to you get back the row being inserted into a table without a separate `select` statement?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/sql-insert` directory in your terminal.
@@ -86,7 +95,7 @@ And because of the `returning` clause, they'd both be included in the statement'
 
 ### Exercise
 
-For this exercise, you will be authoring queries in individual `.sql` files in the exercise directory and then executing them against the `pagila` DVD Rental database. If you have not set up the `pagila` database, then you probably skipped the [`postgres-database`](../postgres-database) lesson.
+For this exercise, you will be authoring queries in individual `.sql` files in the exercise directory and then executing them against the `pagila` DVD Rental database. **These files are not provided; you have to make them yourself with your code editor.** If you have not set up the `pagila` database, then you probably skipped the [`postgres-database`](../postgres-database) lesson.
 
 Before you can begin, it's important to confirm that the PostgreSQL database server is running. The status should be **`online`**. You can check with the following command:
 
@@ -123,10 +132,3 @@ psql -d pagila -f name-of-file.sql
 ### Submitting Your Solution
 
 When your solution is complete, return to the root of your `lfz-full-stack-lessons` directory. Then commit your changes, push, and submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/after-each-exercise.md).
-
-### Quiz
-
-- How do you add a row to a SQL table?
-- What is a tuple?
-- How do you add multiple rows to a SQL table at once?
-- How to you get back the row being inserted into a table without a separate `select` statement?

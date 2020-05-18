@@ -10,15 +10,16 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 
 The features for this application are as follows:
 
-1. **User can read their notes:** asking the program to `read` should display all notes in the `data.json` file.
-1. **User can add a note:** giving the program a new note should append the note to the list of notes in the `data.json` file.
-1. **User can delete a note:** the user should be able to ask the program to `delete` a note by its `id`
+1. **User can read their notes:** asking the program to `read` should display all notes in the `data.json` file. See the example GIF for how they should appear.
+1. **User can add a note:** giving the program a new note should append the note to the list of notes in the `data.json` file. Each new note will be given its own `id`.
+1. **User can delete a note:** the user should be able to ask the program to `delete` a note by its `id`.
 1. **User can update a note:** the user should be able to replace the content of a note given its `id` and the new `content`.
 
-Each of these operations will involve some mixture of reading the `data.json` file, parsing it into JavaScript objects, possibly modifying the data, serializing it back into a JSON string, and then writing the JSON string back into `data.json`.
+Each of these operations will involve some mixture of reading the `data.json` file, parsing it into JavaScript objects, possibly modifying the data, serializing it back into a JSON string, and then overwriting the JSON string back into `data.json`.
 
 ### Tips
 
+- The `nextId` property should never be reset. It serves as a unique identifier and not a "counter".
 - If you `require()` a `.json` file, Node's module system will automatically parse its contents into JavaScript objects.
 - Use `JSON.stringify(data, null, 2)` to create a JSON string with nice indentation and formatting before writing it back to `data.json`.
 

@@ -2,6 +2,12 @@
 
 This lesson covers programming an Express web server to receive JSON data in client request bodies.
 
+### Quiz
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What does the `express.json()` middleware do and when would you need it?
+
 ### Before You Begin
 
 Be sure to check out a new branch (from `master`) for this exercise. Detailed instructions can be found [**here**](../../guides/before-each-exercise.md). Then navigate to the `exercises/express-post-json` directory in your terminal.
@@ -18,10 +24,10 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
 1. Enhance your `app` by passing the JSON middleware to `app.use()`. Now your `app` knows how to parse JSON request bodies.
 1. Read about [sending JSON](https://httpie.org/doc#json) with the HTTPie command line client.
 1. Read about the [`status()` method](https://expressjs.com/en/4x/api.html#res.status) of the Express `res` object.
-1. Test your server by sending a `POST` request to `localhost:3000` that includes a JSON body for a new grade:
+1. Test your server by sending a `POST` request to `localhost:3000/api/grades` that includes a JSON body for a new grade:
     ```json
     {
-      "name": "Tim Horist",
+      "name": "Brendan Eich",
       "course": "JavaScript",
       "grade": 100
     }
@@ -30,12 +36,12 @@ Be sure to check out a new branch (from `master`) for this exercise. Detailed in
     ```json
     {
       "id": 1,
-      "name": "Tim Horist",
+      "name": "Brendan Eich",
       "course": "JavaScript",
       "grade": 100
     }
     ```
-1. Test that your server is storing all of the grades you give it by sending a `GET` request to `/api/grades` with HTTPie.
+1. Test that your server is storing all of the grades you give it by sending another `GET` request to `localhost:3000/api/grades` with HTTPie.
 
 <p align="middle">
   <img src="images/express-post-json.gif">
